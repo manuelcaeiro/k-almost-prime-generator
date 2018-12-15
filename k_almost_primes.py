@@ -12,7 +12,10 @@ def prime_factors(m=2):
 
 def k_almost_primes(n, k=2):
     multiples = set()
-    lists = [[], [], [], [], [], [], [], [], [], []]
+    #lists = [[], [], [], [], [], [], [], [], [], [], []]
+    lists = list()
+    for x in range(k+1):
+        lists.append([])
 
     for i in range(2, n+1):
         if i not in multiples:
@@ -32,4 +35,4 @@ def k_almost_primes(n, k=2):
 
 k_almost_primes(200, 5)
 # try:
-#k_almost_primes(3000, 9)
+#k_almost_primes(6000, 10)
